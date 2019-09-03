@@ -1,6 +1,7 @@
 package nl.quintor.solitaire.game;
 
 import nl.quintor.solitaire.game.moves.Help;
+import nl.quintor.solitaire.game.moves.Move;
 import nl.quintor.solitaire.game.moves.ex.MoveException;
 import nl.quintor.solitaire.models.card.Card;
 import nl.quintor.solitaire.models.card.Rank;
@@ -46,6 +47,9 @@ public class CardMoveChecks {
      */
     public static void deckLevelChecks(Deck sourceDeck, int sourceCardIndex, Deck destinationDeck) throws MoveException {
         // TODO: Write implementation
+        if (sourceDeck.getDeckType() == destinationDeck.getDeckType()) {throw new MoveException("");}
+        //if (sourceDeck == destinationDeck) {throw new MoveException("Move source and destination can't be the same");}
+
     }
 
     /**
