@@ -13,7 +13,7 @@ on the work your team sees.
 | 2     | ~~Write the implementations for CardMoveChecks opposingColor method~~| Easy | Audi
 | 3     | Write the implementations for CardMoveChecks cardMoveCheck method| Easy 
 | 4     | Write the implementation for the GameStateController init method| Difficult | Audi
-| 5     | Write the implementations for CardMoveChecks checkPlayerInput method| Moderate | Berend
+| 5     | ~~Write the implementations for CardMoveChecks checkPlayerInput method~~| Moderate | Berend
 | 6     | Write the implementations for GameStateParser PadAndAdd method| Moderate
 | 7     | Write the implementations for GameStateParser cardStringOrNull method| Easy | Bastiaan
 | 8     | Write the implementations for GameStateParser PadAndAdd method| Moderate
