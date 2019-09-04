@@ -1,12 +1,15 @@
 package nl.quintor.solitaire.game;
 
 import nl.quintor.solitaire.game.moves.Help;
+import nl.quintor.solitaire.game.moves.Move;
 import nl.quintor.solitaire.game.moves.ex.MoveException;
 import nl.quintor.solitaire.models.card.Card;
 import nl.quintor.solitaire.models.card.Rank;
 import nl.quintor.solitaire.models.card.Suit;
 import nl.quintor.solitaire.models.deck.Deck;
 import nl.quintor.solitaire.models.deck.DeckType;
+
+import java.io.Console;
 
 /**
  * Library class for card move legality checks. The class is not instantiable, all constructors are private and all methods are
@@ -46,6 +49,11 @@ public class CardMoveChecks {
      */
     public static void deckLevelChecks(Deck sourceDeck, int sourceCardIndex, Deck destinationDeck) throws MoveException {
         // TODO: Write implementation
+        if (sourceDeck == destinationDeck) {throw new MoveException("Move source and destination can't be the same");}
+        if (sourceDeck.isEmpty()) {throw new MoveException("You can't move a card from an empty deck");}
+        if (destinationDeck.getDeckType() == DeckType.STOCK) {throw new MoveException("You can't move cards to the stock");}
+        if (sourceCardIndex < sourceDeck.getInvisibleCards()) {throw new MoveException("You can't move an invisible card");}
+        if (sourceCardIndex < sourceDeck.size() - 1 && destinationDeck.getDeckType() == DeckType.STACK) {throw new MoveException("You can't move more than 1 card at a time to a Stack Pile");}
     }
 
     /**
