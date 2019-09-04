@@ -43,4 +43,3 @@ before working on the backlog as stated above. Subjects you need to think about 
 
 
 
-
