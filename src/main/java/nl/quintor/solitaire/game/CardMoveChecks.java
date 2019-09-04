@@ -33,7 +33,8 @@ public class CardMoveChecks {
      * @throws MoveException on syntax error
      */
     public static void checkPlayerInput(String[] input) throws MoveException{
-        // TODO: Write implementation
+        if (input[1] == "Z") {throw new MoveException("Invalid Move syntax. \"Z\" is not a valid source location.\nSee H̲elp for instructions.");}
+        if (input[2] == "Z") {throw new MoveException("Invalid Move syntax. \"Z\" is not a valid destination location.\nSee H̲elp for instructions.");}
     }
 
     /**
