@@ -8,6 +8,7 @@ on the work your team sees.
 
 | #     | Description                                       | Difficulty
 |-------|:-------------------------------------------------:|----------------------
+
 | 1     | Write the implementations for CardMoveChecks deckLevelCheck method| Easy | Berend
 | 2     | ~~Write the implementations for CardMoveChecks opposingColor method~~| Easy | Audi
 | 3     | Write the implementations for CardMoveChecks cardMoveCheck method| Easy 
@@ -35,7 +36,6 @@ before working on the backlog as stated above. Subjects you need to think about 
     - Git 
 - Versioning is in place and the team has been thinking about a branching strategy
 - The team has made appointments about how to work (Like for example pair programming)
-
 
 
 
