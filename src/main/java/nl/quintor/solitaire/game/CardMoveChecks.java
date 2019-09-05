@@ -60,6 +60,9 @@ public class CardMoveChecks {
      */
     public static void cardLevelChecks(Deck targetDeck, Card cardToAdd) throws MoveException {
         // TODO: Write implementation
+        if(cardToAdd.getRank() && cardToAdd.getSuit() == DeckType)
+        checkColumnMove();
+        checkStackMove();
     }
 
     // Helper methods
@@ -73,6 +76,8 @@ public class CardMoveChecks {
      */
     static void checkStackMove(Card targetCard, Card cardToAdd) throws MoveException {
         // TODO: Write implementation
+        if (targetCard.getRank() != Rank.KING) {throw new MoveException("Only a King card can be put on top of a stack");}
+        if (cardToAdd.getRank() != Rank.KING) {throw new MoveException("Only a King card can be put on top of a stack");}
     }
 
     /**
@@ -84,6 +89,8 @@ public class CardMoveChecks {
      */
     static void checkColumnMove(Card targetCard, Card cardToAdd) throws MoveException {
         /// TODO: Write implementation
+        if (cardToAdd.getRank() != targetCard.getRank()) {throw new MoveException("This card cannot be put here");}
+
     }
 
     /**
