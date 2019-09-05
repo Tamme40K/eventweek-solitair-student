@@ -13,14 +13,14 @@ on the work your team sees.
 | 3     | ~~Write the implementations for CardMoveChecks cardMoveCheck method~~| Easy 
 | 4     | ~~Write the implementation for the GameStateController init method~~| Difficult | Audi
 | 5     | ~~Write the implementations for CardMoveChecks checkPlayerInput method~~| Moderate | Berend
-| 6     | Write the implementations for GameStateParser PadAndAdd method| Moderate | Bastiaan
+| 6     | ~~Write the implementations for GameStateParser PadAndAdd method~~| Moderate | Bastiaan
 | 7     | ~~Write the implementations for GameStateParser cardStringOrNull method~~| Easy | Bastiaan
-| 8     | Write the implementations for GameStateParser PadAndAdd method| Moderate | Bastiaan
+| 8     | ~~Write the implementations for GameStateParser PadAndAdd method~~| Moderate | Bastiaan
 | 9     | Write the implementations for GameStateParser printRow method| Moderate | Berend
 | 10    | Write the implementations for GameStateParser parseGameState method| DIfficult 
-| 11    | Write the implementation for the GameStateController winDetection method| Moderate
-| 12    | Write the implementation for the GameStateController applyBonusScore method| Moderate
-| 13    | Write the implementation for the GameStateController applyTimePenalty method| Moderate
+| 11    | ~~Write the implementation for the GameStateController winDetection method~~| Moderate | Audi
+| 12    | ~~Write the implementation for the GameStateController applyBonusScore method~~| Moderate | Audi
+| 13    | Write the implementation for the GameStateController applyTimePenalty method| Moderate | Bastiaan
 | 14    | Write the implementation for the GameStateController init method| Moderate
 | 15    | Refine with the team which task to add to let all tests pass| Moderate
 

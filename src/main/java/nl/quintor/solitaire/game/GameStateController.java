@@ -82,7 +82,11 @@ public class GameStateController {
      * @param gameState GameState object that the score penalty is applied to
      */
     public static void applyBonusScore(GameState gameState){
-        // TODO: Write implementation
+        long time = Duration.between(gameState.getStartTime(), gameState.getEndTime()).getSeconds(); //get the duration of the game
+        if(time > 30){
+            long score = 700000 / time;
+            gameState.setTimeScore(score);
+        }
     }
 
     /**
@@ -93,6 +97,15 @@ public class GameStateController {
      * @param gameState GameState object of which it is determined if the game has been won
      */
     public static void detectGameWin(GameState gameState){
-        // TODO: Write implementation
+        boolean noInvisibleCards = true;
+        //check if there are invisible cards
+        for(Map.Entry<String, Deck> deck : gameState.getColumns().entrySet()){
+            if(deck.getValue().getInvisibleCards() > 0){
+                noInvisibleCards = false;
+            }
+        }
+
+        //true only if there are no invisible cards left on the columns and the stock is empty
+        gameState.setGameWon(noInvisibleCards && gameState.getStock().isEmpty());
     }
 }
