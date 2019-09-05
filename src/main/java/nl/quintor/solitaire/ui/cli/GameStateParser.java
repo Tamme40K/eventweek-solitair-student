@@ -90,13 +90,14 @@ class GameStateParser {
      */
     protected static void padNAdd(StringBuilder builder, String string, int totalLength){
         int len = string.length();
+        builder.append(string);
         if(len == 1) {
             builder.insert(0, " ");
-            len = string.length();
+            len = builder.toString().length();
         }
         while(len < totalLength){
             builder.append(" ");
-            len += 1;
+            len = builder.toString().length();
         }
         string =  builder.toString();
     }
