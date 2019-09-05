@@ -80,7 +80,11 @@ public class GameStateController {
      * @param gameState GameState object that the score penalty is applied to
      */
     public static void applyBonusScore(GameState gameState){
-        // TODO: Write implementation
+        long time = Duration.between(gameState.getStartTime(), gameState.getEndTime()).getSeconds(); //get the duration of the game
+        if(time > 30){
+            long score = 700000 / time;
+            gameState.setTimeScore(score);
+        }
     }
 
     /**
