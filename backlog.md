@@ -17,11 +17,11 @@ on the work your team sees.
 | 7     | ~~Write the implementations for GameStateParser cardStringOrNull method~~| Easy | Bastiaan
 | 8     | ~~Write the implementations for GameStateParser PadAndAdd method~~| Moderate | Bastiaan
 | 9     | Write the implementations for GameStateParser printRow method| Moderate | Berend
-| 10    | Write the implementations for GameStateParser parseGameState method| DIfficult 
+| 10    | Write the implementations for GameStateParser parseGameState method| DIfficult | Audi
 | 11    | ~~Write the implementation for the GameStateController winDetection method~~| Moderate | Audi
 | 12    | ~~Write the implementation for the GameStateController applyBonusScore method~~| Moderate | Audi
 | 13    | Write the implementation for the GameStateController applyTimePenalty method| Moderate | Bastiaan
-| 14    | Write the implementation for the GameStateController init method| Moderate
+| 14    | ~~Write the implementation for the GameStateController init method~~| Moderate | Audi
 | 15    | Refine with the team which task to add to let all tests pass| Moderate
 
 # Sprint 0
