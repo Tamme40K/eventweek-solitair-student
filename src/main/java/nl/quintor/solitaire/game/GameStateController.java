@@ -71,6 +71,7 @@ public class GameStateController {
      */
     public static void applyTimePenalty(GameState gameState){
         // TODO: Write implementation
+        gameState.setTimeScore(Duration.between(gameState.getStartTime(), gameState.getEndTime()).getSeconds() / 10 * -2);
     }
 
     /**
